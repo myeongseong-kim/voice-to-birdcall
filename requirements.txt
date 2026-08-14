@@ -5,14 +5,18 @@ ipykernel
 ipywidgets
 jupyterlab
 
-# Core scientific/image stack
+# Core scientific/image/audio stack
+librosa>=0.10.2
 matplotlib
 numpy
 pillow
 opencv-python
 scikit-learn
+scipy>=1.12
+soundfile>=0.12.1
 tqdm
 
 # Development
 pytest
 ruff
+
