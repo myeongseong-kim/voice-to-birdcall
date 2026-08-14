@@ -45,6 +45,19 @@ python -m pip install -r requirements.txt
 python -m ipykernel install --sys-prefix --name python3 --display-name ".venv"
 ```
 
+### FFmpeg
+
+Audio conversion requires FFmpeg. The Python dependencies include
+`imageio-ffmpeg`, which provides a bundled FFmpeg executable. The preprocessing
+notebook uses a system `ffmpeg` command when it is available on `PATH` and falls
+back to the bundled executable otherwise.
+
+Verify the executable selected by the fallback package:
+
+```powershell
+python -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())"
+```
+
 VS Code can open and run `.ipynb` notebooks directly after this setup. To use
 the browser-based JupyterLab UI instead, start it separately:
 
