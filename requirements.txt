@@ -6,6 +6,7 @@ ipywidgets
 jupyterlab
 
 # Core scientific/image/audio stack
+imageio-ffmpeg>=0.6
 librosa>=0.10.2
 matplotlib
 numpy

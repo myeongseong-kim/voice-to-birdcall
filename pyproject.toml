@@ -9,6 +9,7 @@ description = "Notebook-friendly Python workspace for voice-to-birdcall experime
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "imageio-ffmpeg>=0.6",
     "ipykernel",
     "ipywidgets",
     "jupyterlab",
